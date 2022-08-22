@@ -173,7 +173,7 @@ class AvatarImageView @JvmOverloads constructor(
     override fun onLongClick(v: View?): Boolean {
         Log.e("AvatarImageView", "onLongClick: ");
         val va = ValueAnimator.ofInt(width, width * 2).apply {
-            duration = 150
+            duration = 500
             interpolator = FastOutSlowInInterpolator()
             repeatMode = ValueAnimator.REVERSE
             repeatCount = 1
