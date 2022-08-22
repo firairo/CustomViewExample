@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:gravity="center">
+    android:id="@+id/container">
 
-    <com.lexshi.customviewexample.ui.AvatarImageViewMask
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/johnny_silverhand"/>
+    <com.lexshi.customviewexample.ui.AvatarImageView
+        android:id="@+id/aiv"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ava_big"/>
 
-    <TextView
+    <Button
+        android:id="@+id/btn_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="COLOR"/>
+
+    <Button
+        android:id="@+id/btn_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BORDER"/>
 
 </LinearLayout>
